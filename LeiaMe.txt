@@ -1,4 +1,0 @@
-No arquivo calculadora.py se encontram as funções que realizam as operações.
-No arquivo execute.py você pode compilar e colocar seu próprio input para realizar testes.
-No arquivo premadeInputs.py estão os inputs realizados para montar o gráfico onde somente é mostrado o
-tempo de compilação, basta comentar ou descomentar a linha para viazualizar o resultado desejado.
