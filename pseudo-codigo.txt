@@ -1,0 +1,100 @@
+função de soma (num1, num2):
+    se o primeiro numero conter mais digitos que o segundo:
+        diferença = tamamho primeiro numero - tamanho segundo numero
+        loop para salvar string com a quantidade de zeros da diferença
+        segundo numero = zeros + segundo numero
+
+    se o segundo numero conter mais digitos que o primeiro:
+        diferença = tamanho segundo numero - tamanho primeiro numero
+        loop para salvar string com a quantidade de zeros da diferença
+        segundo numero = zeros + segundo numero
+
+    tamanho = tamanho primeiro numero
+    resto = nada
+    resultado = string vazia
+
+    percorrendo o numero de tras pra frente:
+        somar = digito i do primeiro numero + digito i do segundo + resto
+        se o resultado conter mais de 1 digito:
+            armazena o segundo digito no resultado e guarda o primeiro como resto
+        caso contrario:
+            armazena o resultado como resultado
+
+    se depois do loop tiver sobrado resto:
+        resultado = resultado + resto
+
+    inverter resultado (pois os numeros foram adicionados da esquerda pra direita)
+
+    retorna resultado
+
+função de multiplicação (num1, num2):
+    se o primeiro numero conter mais digitos que o segundo:
+        diferença = tamamho primeiro numero - tamanho segundo numero
+        loop para salvar string com a quantidade de zeros da diferença
+        segundo numero = zeros + segundo numero
+
+    se o segundo numero conter mais digitos que o primeiro:
+        diferença = tamanho segundo numero - tamanho primeiro numero
+        loop para salvar string com a quantidade de zeros da diferença
+        segundo numero = zeros + segundo numero
+
+    tamanho = tamanho primeiro numero
+    resto = nada
+    resultado = string vazia
+    vetor para colocar numeros que devem ser somados depois da multiplicação
+    casasNum = variavel para contar o numero de casas que precisa deixar em branco à direita a cada multiplicação
+
+    loop percorrendo o tamanho do numero de tras pra frente:
+        resultado = string vazia
+        loop percorrendo o tamanho do numero de tras pra frente:
+            multiplicação = digito i do segundo numero * digito j do primeiro numero + resto
+            resto = nada
+            se o resultado conter mais de 1 digito:
+                armazena o segundo digito no resultado e guarda o primeiro como resto
+            caso contrario:
+               armazena o resultado como resultado
+            
+            se for o ultimo digito do numero e resto for diferente de zero:
+                adicionar resto ao resultado
+                resto = nada
+
+        inverter resultado
+        adicionar casasNum zeros ao final
+        adicionar resultado ao vetor de numeros para somar
+
+        casasNum += 1
+
+    loop percorrendo o vetor:
+        zeros = string vazia
+        difereçança = tamanho(ultimo numero) - tamanho(numero i)
+        zeors = difereçança * zeros
+        auxiliar = numero i
+        numero i = zeros + auxiliar
+
+    auxiliar = string vazia
+
+    loop percorrendo o vetor:
+        se for o primeiro numero do vetor:
+            auxiliar = numero i
+
+        senão:
+            resultado = somar(auxiliar, numero i)
+            auxiliar = resultado
+
+    variavel auxiliar = True
+    resultado = string vazia
+
+    loop percorrendo o resultado:
+        se digito i == 0 e variavel auxiliar == True:
+            faz nada 
+        senão:
+            auxiliar = False
+            resultado += digito i
+
+    retorna resultado
+    
+
+
+
+
+    
